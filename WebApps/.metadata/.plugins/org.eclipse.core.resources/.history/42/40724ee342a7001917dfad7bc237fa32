@@ -1,0 +1,28 @@
+package com.zensar;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class EmployeeDAO {
+	
+	public Connection createConnection()
+	{
+	try {
+
+		Class.forName("com.mysql.jdbc.Driver");       
+		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/test_mysql","root","Temp1234");   //get connection
+        Statement stmt=conn.createStatement();
+        ResultSet rs=stmt.executeQuery("Select * from Employee");
+      
+        conn.close();                                         
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	return null;
+
+}
+}

@@ -1,0 +1,48 @@
+package com.zensar;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class NumberTest {
+
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Double> sum=new ArrayList<Double>();
+		sum.add(25.70);
+		sum.add(16.25);
+		sum.add(45.85);
+		sum.add(35.5);
+		sum.add(12.25);
+		double total=0;
+		double avg=0;
+		for( int i=0;i<sum.size();i++)
+		{
+		total+=sum.get(i);
+		}
+		avg=total/sum.size();
+		System.out.println("Average is="+avg);
+		
+		
+		
+		//second part
+		for( int i=0;i<sum.size();i++)
+		{
+			double new_val=0;
+			double number=sum.get(i);
+			if((number>12.0)&&(number<40.0))
+			{
+			 new_val=number+2.5;	
+			}
+		
+			else
+				new_val=sum.get(i);
+			
+			sum.set(i,new_val);
+		}
+		System.out.println(sum+ " ");
+	}
+}
+
+

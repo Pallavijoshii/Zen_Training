@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+
+<body>
+    <style>
+        input
+        {
+            border-radius: 4px;
+            box-shadow: 3px 3px 4px black;
+        }
+        input[type=submit]{
+            height:30px;
+            box-shadow: none;
+            border-radius: 40px;
+            background: linear-gradient(to left,navy,white);
+            color: white;
+        
+        }
+        input[type^=te]{
+            background: yellow;
+        }
+        
+        
+        input[type$=l]{
+            background: gray;
+        }
+        input[type*=u]{
+            background: plum;
+        }
+        input:valid{
+            border: 2px solid green;
+        }
+        
+        input:valid{
+            border: 2px solid red;
+        }
+        
+    </style>
+    <img src="" height="100" width="200">
+    
+    <form>
+        <table>
+            <tr>
+                <td><label for="fname">firstname</label></td>
+                <td><input type="text" name="fname" id="fname" placeholder="key in your first name" required minlength="5" maxlength="10" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="email">EmailID</label></td>
+                <td><input type="email" name="email" id="fname" placeholder="abc@y" id="email"></td>
+
+            </tr>
+            
+            
+            <tr>
+                <td><label for="wxp">Expinyears</label></td>
+                <td><input type="number" min="3" max="5" id="wxp">
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="homepage">URL</label></td>
+                <td><input type="url" id="homepage" placeholder="http://www.zensar.com">
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="doj">dateofjoining</label></td>
+                <td><input type="date" placeholder="mm/dd/yy" id="doj">
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="favcolor">favoritecolor</label></td>
+                <td><input type="color" id="favcolor">
+                </td>
+            </tr>
+            
+            
+            <tr>
+                <td></td>
+                <td><button="submit" value="RegisterHere"..>
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+        </body>
+    </html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zen:movies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zen="http://www.zensar.com/movies" xsi:schemaLocation="http://www.zensar.com/movies movies.xsd ">
+  <zen:movie>
+    <zen:code>5002</zen:code>
+    <zen:title>Lion king</zen:title>
+    <zen:theatre-name>PVR</zen:theatre-name>
+  </zen:movie>
+  
+  <zen:movie>
+    <zen:code>5005</zen:code>
+    <zen:title>Spiderman</zen:title>
+    <zen:theatre-name>Inox</zen:theatre-name>
+    <zen:theatre-name>Inorbit </zen:theatre-name>
+  </zen:movie>
+</zen:movies>

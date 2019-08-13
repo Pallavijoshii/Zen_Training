@@ -1,0 +1,18 @@
+package com.zensar.emp;
+
+import mypac.employee.*;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		public static void main(String[] args) 
+		{
+			employee e1=new employee();
+			employee e2=new employee(1,"ram",12345);
+			employee e3=new employee();
+			employee e4=new employee(4,"shyam",76543);
+			employee.showCnt();
+		}
+	}
+
+}

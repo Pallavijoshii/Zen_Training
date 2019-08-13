@@ -1,0 +1,57 @@
+package com.zensar;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+public class EmployeeController extends HttpServlet {
+	
+	public void doGet(HttpServletRequest request,HttpServletResponse response) 
+	{
+		//addEmployee(request, response);
+		viewAllEmployees(request, response);
+	}
+	
+	public void viewAllEmployees(HttpServletRequest request,HttpServletResponse response)
+	{
+		EmployeeDAO employee=new EmployeeDAO();
+		try {
+			List<Employee> listOfAllEmployees=employee.getAllEmployees();
+					
+			HttpSession session =request.getSession();
+			session.setAttribute("listOfAllEmployees", listOfAllEmployees);
+			response.sendRedirect("getAllEmployees.jsp");
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+
+	private void addEmployee(HttpServletRequest request, HttpServletResponse response) {
+		int employeeId=Integer.parseInt(request.getParameter("employeeId"));
+		String employeeName=request.getParameter("employeeName");
+		int salary=Integer.parseInt(request.getParameter("salary"));
+		System.out.println("employeeId:"+employeeId);
+		System.out.println("employeeName:"+employeeName);
+		System.out.println("salary:"+salary);
+		
+		
+		EmployeeDAO employeeDao=new EmployeeDAO();   //for getting data in database
+		try {
+		int result=employeeDao.addEmployee(new Employee(employeeId,employeeName,salary));
+		
+		response.sendRedirect("success.jsp");
+		
+		}catch(Exception e)
+		{
+			System.out.println(e);
+			System.out.println("exception has occured");
+		}
+	}
+	
+
+}

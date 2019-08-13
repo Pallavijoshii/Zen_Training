@@ -1,0 +1,73 @@
+<html>
+<head>
+<title></title> 
+    <script type="text/javascript">
+      function addNumbers() 
+    {
+        var firstNumber=document.getElementById("txtFirstNumber").value; 
+        if(firstNumber=="")
+            {
+                alert("First number is required");
+                return;
+            }
+         firstNumber=parseFloat(firstNumber);
+          if (isNaN(firstNumber)) 
+           {
+             alert("Please enter a valid number in the first number textbox");
+             return;
+           }
+       
+        
+        
+         var secondNumber=document.getElementById("txtSecondNumber").value;
+         if(secondNumber=="")
+            {
+                alert("Second number is required");
+                return;
+            }
+         secondNumber=parseFloat(secondNumber);
+          if (isNaN(secondNumber)) 
+           {
+                alert("Please enter a valid number in the second number textbox");
+                return;
+           }
+        
+       
+        
+        
+        
+        document.getElementById("txtResult").value = firstNumber + secondNumber;
+    }
+    </script>
+</head>
+
+    
+    <body>
+    <form id="form1" runat="server">
+    
+        <table style="border:1px solid black; font-family:Arial">
+        <tr>
+        <td>First number</td>
+        <td><input type="text" id="txtFirstNumber"></td>
+        </tr>    
+        
+        <tr>
+        <td>Second number</td>
+        <td><input type="text" id="txtSecondNumber" ></td>
+        </tr> 
+        
+        <tr>
+        <td>Result</td>
+        <td><input type="text" id="txtResult"></td>
+        </tr> 
+        
+        <tr>
+        <td></td>
+        <td><input type="button" value="Add" id="btnAdd" onclick="addNumbers()"></td>
+        </tr> 
+    
+        </table>
+        </form>
+    
+</body>
+</html>

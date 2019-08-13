@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+  <form action="zenrest/productAddServices/add" methd="post">
+  Product Id:<input type="number" name="Id"/></br>
+  Product Name: <input type="text" name="Name"/></br>
+  Product price<input type="number" name="Price"/></br>
+  <input type="submit" value="AddProduct"/>
+  </form>
+</body>
+</html>

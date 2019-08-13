@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="com.zensar.*",java.util.*%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View all employees</title>
+</head>
+<body>
+<h2>List of all employees</h2>
+<% List<Employee> listOfAllEmployees=(List<Employee>)session.getAttribute("listOfAllEmployees"); %>
+<table>
+<th>Employee Id</th>
+<th>Name</th>
+<th>Salary</th>
+
+<% for(Employee employee: listOfAllEmployees){ %>
+<tr>
+<td><%=employee.getEmpid() %></td>
+<td><%=employee.getEmpname() %></td>
+<td><%=employee.getSalary() %></td>
+</tr>
+<% } %>
+</table>
+
+</body>
+</html>

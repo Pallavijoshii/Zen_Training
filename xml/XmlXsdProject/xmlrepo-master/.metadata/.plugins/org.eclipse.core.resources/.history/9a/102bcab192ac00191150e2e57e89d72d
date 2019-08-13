@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.zensar.com/orderSchema" xmlns:tns="http://www.zensar.com/orderSchema" elementFormDefault="qualified">
+<element name="orders">
+	<complexType>
+		<sequence>
+			<element name="order" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="order-id">
+							<simpleType>
+								<restriction  base="string">
+									<pattern value="OI-[0-9]{4}"></pattern>								
+								</restriction>							
+							</simpleType>						
+						</element>
+						<element name="Customer-Id">
+							<simpleType>
+								<restriction  base="string">
+									<pattern value="C-[0-9]{6}"></pattern>								
+								</restriction>							
+							</simpleType>						
+						</element>						
+						<element name="Customer-Name" >
+							<simpleType>
+								<restriction  base="string">
+									<pattern value="[a-zA-Z]" ></pattern>		
+									<minLength value="10"></minLength>
+									<maxLength value="20"></maxLength>						
+								</restriction>							
+							</simpleType>						
+						</element>	
+						<element name="Plan"  type="string" >
+							<complexType>
+								
+								<attribute use="required"></attribute>
+															
+							</complexType>						
+						</element>				
+						<element name="Service"  type="string" use="required">						
+						</element>				
+						
+					
+					
+					
+					
+					
+					
+					</sequence>
+				
+				
+				
+				
+				</complexType>
+			
+			
+			
+			
+			
+			
+			
+			
+			</element>
+					
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		</sequence>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</complexType>
+
+
+
+
+
+
+
+
+
+
+</element>
+
+
+
+
+</schema>

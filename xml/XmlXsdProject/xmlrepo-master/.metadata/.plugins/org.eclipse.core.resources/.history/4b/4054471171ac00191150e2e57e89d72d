@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:zen="http://www.zensar.com/2001/XMLSchema" targetNamespace="http://www.zensar.com/movies" xmlns:tns="http://www.zensar.com/movies" elementFormDefault="qualified">
+
+
+
+
+
+
+
+
+</xs.schema>

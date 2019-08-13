@@ -1,0 +1,21 @@
+package mypac;
+
+import java.util.Scanner;
+
+public class additionOfTwoNumbers {
+	public static void main(String args[])
+	{
+		Scanner sc =new Scanner(System.in);
+		int a,b,c;
+		System.out.println("enter value of a");
+		a=sc.nextInt();
+		System.out.println("enter value of b");
+		b=sc.nextInt();
+		c=a+b;
+		System.out.println("total of a and b is="+c);
+	}
+}
+
+
+
+

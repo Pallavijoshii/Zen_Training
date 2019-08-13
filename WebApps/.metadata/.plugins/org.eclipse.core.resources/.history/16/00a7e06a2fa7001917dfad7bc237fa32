@@ -1,0 +1,20 @@
+package com.zensar;
+
+public class Icecream {
+	private String flavour;
+	private float price;
+	private float discount;
+	
+	private Icecream(String flavour,float price)
+	{
+		super();
+		this.flavour=flavour;
+		this.price=price;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

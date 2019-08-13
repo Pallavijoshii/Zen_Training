@@ -1,0 +1,37 @@
+package mypac;
+
+import java.util.Scanner;
+
+public class commision {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		float basicSalary,totalSales,commission,netSalary;
+		System.out.println("enter basic salary and total sales amount");
+		basicSalary=sc.nextFloat();
+		totalSales=sc.nextFloat();
+		
+		if(totalSales>=5000 && totalSales<=7500)
+		
+			commission=((float)0.03*totalSales);
+		else 
+			if(totalSales>=7501 && totalSales<=10500)
+			
+				commission=((float)0.08*totalSales);
+			
+			else 
+				if(totalSales>=10501 && totalSales<=15000)
+				
+					commission=((float)0.11*totalSales);	
+				
+				else 
+					if(totalSales>=15000)
+					
+						commission=((float)0.15*totalSales);	
+					else
+						commission=0;
+					
+		System.out.println("commission is=" +commission); 
+	}
+
+}

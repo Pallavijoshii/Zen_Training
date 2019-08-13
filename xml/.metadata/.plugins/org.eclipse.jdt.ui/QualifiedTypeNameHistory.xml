@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.xml.parsers.SAXParserFactory"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.parsers.SAXParser"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="jdk.internal.util.xml.SAXParser"/>
+<fullyQualifiedTypeName name="javax.xml.parsers.SAXParser"/>
+</qualifiedTypeNameHistroy>

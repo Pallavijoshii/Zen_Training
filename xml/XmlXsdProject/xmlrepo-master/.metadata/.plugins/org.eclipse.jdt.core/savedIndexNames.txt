@@ -1,0 +1,4 @@
+INDEX VERSION 1.130+D:\tushar\git\xmlrepo\.metadata\.plugins\org.eclipse.jdt.core
+1678436340.index
+1978894187.index
+580822205.index

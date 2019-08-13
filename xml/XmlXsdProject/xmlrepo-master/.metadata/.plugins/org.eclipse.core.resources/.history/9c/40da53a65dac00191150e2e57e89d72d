@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE movies SYSTEM "movies.dtd" >
+<movies>
+  <movie>
+    <code>code</code>
+    <title>title</title>
+    <release-date>
+      <day>day</day>
+      <month>month</month>
+      <year>year</year>
+    </release-date>
+    <theatre-name>theatre-name</theatre-name>
+    <city>city</city>
+  </movie>
+</movies>

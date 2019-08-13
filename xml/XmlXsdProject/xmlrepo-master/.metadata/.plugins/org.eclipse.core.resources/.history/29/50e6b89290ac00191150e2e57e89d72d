@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.zensar.com/orderSchema" xmlns:tns="http://www.zensar.com/orderSchema" elementFormDefault="qualified">
+<element name="orders">
+	<complexType>
+		<sequence>
+			<element name="order" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="order-id">
+							<simpleType>
+								<restriction  base="string">
+									<totalDigits value="7"></totalDigits>
+									<pattern value="Oi-[0-9][0-9][0-9][0-9]"></pattern>
+								
+								</restriction>
+							
+							
+							</simpleType>
+						
+						</element>
+					
+					
+					
+					
+					
+					
+					
+					</sequence>
+				
+				
+				
+				
+				</complexType>
+			
+			
+			
+			
+			
+			
+			
+			
+			</element>
+					
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		</sequence>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</complexType>
+
+
+
+
+
+
+
+
+
+
+</element>
+
+
+
+
+</schema>

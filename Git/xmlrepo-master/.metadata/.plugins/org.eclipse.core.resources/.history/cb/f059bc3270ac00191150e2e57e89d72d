@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE movies SYSTEM "movies.dtd" >
+<movies>
+  <movie>
+    <code>101</code>
+    <title>Kabir Singh</title>
+    <release-date>
+      <day>19</day>
+      <month>july</month>
+      <year>2019</year>
+    </release-date>
+    <theatre-name>Bollywood Cineplex</theatre-name>
+    <theatre-name>PVR</theatre-name>
+    <theatre-name>Cinepolis</theatre-name>
+    <city>Pune</city>
+    <city>Mumbai</city>
+    <city>Delhi</city>
+    
+  </movie>
+  
+  <movie>
+    <code>102</code>
+    <title>Lion King</title>
+    <release-date>
+      <day>18</day>
+      <month>july</month>
+      <year>2019</year>
+    </release-date>
+    <theatre-name>PVR</theatre-name>
+    <city>Pune</city>
+  </movie>
+  
+</movies>

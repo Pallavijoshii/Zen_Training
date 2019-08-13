@@ -1,0 +1,29 @@
+package com.zensar;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class EmployeeController extends HttpServlet {
+	
+	public void doGet(HttpServletRequest request,HttpServletResponse response) 
+	{
+		int employeeId=Integer.parseInt(request.getParameter("employeeId"));
+		String employeeName=request.getParameter("employeeName");
+		int salary=Integer.parseInt(request.getParameter("salary"));
+		System.out.println("employeeId:"+employeeId);
+		System.out.println("employeeName:"+employeeName);
+		System.out.println("salary:"+salary);
+		
+		
+		EmployeeDAO employeeDao=new EmployeeDAO();
+		try {
+		employeeDao.addEmployee(new Employee(employeeId,employeeName,salary));
+		}catch(Exception e)
+		{
+			System.out.println("exception has occured");
+		}
+	}
+	
+
+}

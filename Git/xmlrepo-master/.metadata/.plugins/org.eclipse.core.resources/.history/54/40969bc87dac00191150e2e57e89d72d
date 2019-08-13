@@ -1,0 +1,10 @@
+package com.zensar.xml.sax.parsers;
+
+public class movieXMLParser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

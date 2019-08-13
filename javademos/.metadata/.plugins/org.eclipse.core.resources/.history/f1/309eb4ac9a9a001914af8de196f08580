@@ -1,0 +1,50 @@
+package mypac;
+
+class employee
+{
+	private int empid;
+	private String name;
+	private double salary;
+	private static int cnt;
+	
+static
+{
+	cnt=0;
+	}
+
+public employee()
+{
+	cnt++;
+	}
+
+public employee(int empid,String name,double salary)
+{
+	this.empid=empid;
+	this.name=name;
+	this.salary=salary;
+	cnt++;
+}
+
+public void display()
+{
+	System.out.println(empid+"\t"+name+"\t"+salary);
+}
+public static void showCnt()
+{
+	System.out.println("no. of objects-" +cnt);
+}
+}
+
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		employee e1=new employee();
+		employee e2=new employee(1,"ram",12345);
+		employee e3=new employee();
+		employee e4=new employee(4,"shyam",76543);
+		employee.showCnt();
+	}
+
+}

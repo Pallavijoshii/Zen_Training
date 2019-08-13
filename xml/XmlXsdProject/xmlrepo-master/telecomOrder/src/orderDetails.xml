@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:orders xmlns:tns="http://www.zensar.com/orderSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.zensar.com/orderSchema ../orderSchema.xsd ">
+  <tns:order>
+    <tns:order-id>OI-7956</tns:order-id>
+    <tns:Customer-Id>C-549764</tns:Customer-Id>
+    <tns:Customer-Name>Grishma Kagde</tns:Customer-Name>
+    <tns:Plan Plan="Billing the customer"/>
+    <tns:Service Service="Provide the details"/>
+    <tns:Billing-cycle>monthly</tns:Billing-cycle>
+    <tns:Billing-Address/>
+    <tns:Service-Address Service-Address="Gulmohar colony, Pune"/>
+  </tns:order>
+</tns:orders>

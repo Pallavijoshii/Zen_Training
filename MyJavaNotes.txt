@@ -1,0 +1,670 @@
+                                  Java Standard Edition
+Type of Applications we can implement using JSE/J2SE-
+1. Stand-Alone Applications
+2. Client-Server Applications
+ 
+Core Java:
+ 
+Types of brackets-
+()-paranthesis
+[]-subscripts
+{}-blocks
+ 
+-> System.out.println
+   System-class name
+   out-static object of PrintStream Class
+   println- method of PrintStream class
+ 
+How to set path?
+=>using command prompt- (first change your directory in which you have saved your java program then check the path
+  is set by writing "javac". if not then explicilty write set path =(the path where the bin file is present)   
+  (this change is temporary)
+=>from computer properties -
+  right click on "this pc" --> properties -->advance system settings --> environment variables -->system variables
+  -->edit path.  
+ 
+# After compilation, we will have the same number of .class file as the same number of classes we have in our program
+  and the name of the .class file will be same as our class name.
+ 
+# Java is case-sensitive.
+ 
+# variable- it is a name given to memory location.
+ 
+# 8 primitive Datatypes in Java-
+  int(4 bytes), float(4 bytes), double(8 bytes), boolean(1 bit), long(8 bytes), short(2 bytes), char(2 bytes), byte(1 byte).
+ 
+# declaration of a variable- eg. int a,b;
+ 
+# initialization of a variable- eg. int a=10, b=20;
+ 
+# writing sysout and clicking "ctrl+space" will automatically write System.out.println().
+ 
+# for Console input- create a scanner class object.The syntax is Scanner sc= Scanner(System.in);(import scanner class 
+  from the java.util library by writing "import java.util.Scanner;")
+ 
+# for running program shortcut is F11.
+ 
+# arity- number of operands an opertor works upon
+         1.unary(-,--,++,!,~)    2.binary- (2.1 arithematic(+,-,*,/,%) 2.2 assignment(=,+=,-=,*=,/=,%=) 
+         2.3 relational(>,<,<=,>=,==,!=) 2.4 logical(&&,||,,&,|))    3.ternary(?,:)
+ 
+# constructs in java- conditional construct(1. if-else, 2.switch-case) and 
+  iterative contructs(1. while, 2.for, 3.do while 4. for each loop).
+ 
+# in switch-case => case label-(case 1, here, 1 is the case label) - case label can be int, char or string.
+ 
+# loop syntax - initialization, condition, termination.
+ 
+# for a factorial program it is a good practice to use do-while loop as it will avoid usage of repetitive code.
+ 
+# Arrays- It is a collection of elements of same type.
+ 
+# Arrays are internally treated as object of some class thats why we need new keyword.
+ 
+# Arrays are of two types- 1. 1D array - initialization of an array is like int a[]={1,2,3,4,5};
+  Declaration of arrays- int[]b= new int[]{1,2,3,4,5};
+ 
+  int []c;    c=new int[5]; (here, we will take input from user.
+ 
+ 
+# Local variables are stored in stack and objects in heap.
+ 
+# For each loop- it is a traversing technique for arrays.(we can not use it to accept elements of array) 
+ 
+# for traversal or reading the elements of array we can use the following syntax(for each loop)-
+  for(int x:c){   System.out.print(x+ " "); (here, x is storing the collection and displaying it and c is the array name.
+  This can not be used for storing elements in arrays)
+ 
+# To know about any keyword take the cursor on that keyword and press ctrl, it will 
+ 
+# JRE is subset of JDK (for clients JRE is sufficient but for a developer JDK is necessary). 
+ 
+# JDK is the superset of JRE, JVM, JIT. JRE is subset of JDK, JVM is a subset of JRE, JIT is the subset of JVM.
+ 
+# Jagged arrays are arrays having non-uniform no of elements in array.Eg. int [][]a={{1,2,3},{4,5,6},{7,8}}; 
+ 
+# OOPs- Object Oriented Programming Structure 
+  1. Abstraction- process of selecting the key attributes of an entity and ignoring the rest based on the domain.
+  2. Encapsulation- refers to data hiding.
+  3. Inheritance-It is a "is-a" kind of relationship between classes.(parent-child relationship)
+  4. Polymorphism- Different response to same command. (Different form of the same thing)
+ 
+# Declaration dont allocate any memory i.e. no memory is allocated at the time of declaration.
+ 
+# Memory is allocated when you create the object of that class.
+ 
+# Constructor -method of a class with same name as that of class name and no return type to it .
+  It is called after creating its object. constructor is used to initialize instance variable of an object.
+ 
+# Type of Constructors- a. default constructor (no argument constructor)   b. parameterized constructor
+ 
+ 
+# Method Overloading- In Java, we can implement multiple methods with same name provied that , their signature is different.
+ 
+  signature - a. number of parameters.
+              b. datatype of parameters.
+              c. sequence of parameters.
+  eg. public int add(int a, int b);
+      public float add(float a, float b);
+      public int add(int a, int b, int c);
+      public float add(int a, float b);
+      public float add(float a, int b);
+      public double add(float a, int b);
+      (first five will compile as the signature is different but the last one will give an error bcuz
+      last and second last one have same signature even the datatypes are different)
+ 
+# when we call the object of any class inside System.out.println() then it will generate the hashcode as it will call 
+  toString() method from the object class.
+ 
+# Getter and Setter method- 
+ 
+# "this" is a reference which will always refer to an object to an object who invokes the method.
+  It represents current scope. "this" keyword is used to overcome shadowing of instance varible) and is also used in 
+  constructor chaining( calling one constructor of a class from another constructor of the same class is 
+  called as constructor chaining)
+ 
+# shadowing of instance variable.
+ 
+# Static - 1.Static instance variable-
+             1.1 For static instance variable only one copy exists which is shared by all the objects of a class.
+             1.2 Static instance variables are initialised in static block.
+           2.Static method-
+             2.1 Static method represent class specific behaviour (not object specific)
+             2.2 Static method can be called without object
+                                     <class_name>.<method_name>(); 
+             2.3 Static method can access only static instance variable of a class.
+           3.Static Block -
+             3.1 This block is executed whenever class is loaded onto the JVM for the first time. 
+             3.2 It is used for database connectivity, allocation of resources, initializing static instance var.
+             3.3 If aclass contains more than one static block then they are executed in a sequence they are written 
+                 inside the class.
+           4.Static import
+ 
+# Syntax for instance block
+  //instance block
+   {
+   }
+ 
+# Static block
+  static //static block
+  {
+  }
+ 
+# Import statement will import all the classes but not the sub-package. 
+  We have to write a separate import statement for sub-package. 
+ 
+# "has-a" relationship
+ 
+# "is-a" relationship
+ 
+# Composition
+ 
+# Aggregation
+ 
+# Method Overriding- Multiple methods with same name, same signature and same return type existing in different scope of 
+  heirarchy of inheritance is called method overriding.
+ 
+# In Java, super class object can hold sub class object but sub class reference cannot hold super class object 
+  i.e. only upcasting is supported.
+ 
+# In Java, the method invocation is governed by dynamic type of reference. 
+ 
+# Final-
+  1. Final variable indicates constant value for it which we cannot modify.
+  2. Methods declared as "final" cannot be overridden in its sub-classes.
+  3. Class declared as "final" cannot be extended by other class.
+  4. In short Final is used to stop polymorphism.
+  5. It is used in immutable classes.
+ 
+# Abstract- 
+  1. It is just a concept. It does not have any physical existence.
+  2. Abstract methods do not have any definition associated with it.
+  3. Abstract methods can be declared only inside abstract class
+     (but an abstract class can have abstract as well as concrete methods).
+  4. It is mandatory for subclass to override all abstract methods of its superclass else we need to declare that sub-class 
+     also as an abstract class.
+  5. We cannot instantiate an abstract class.
+ 
+# If all the methods of a class have abstract method it is better to make it an interface as it contains only abstract 
+  methods whereas abstract class can have both concrete and abstract methods in it.
+ 
+# Interfaces-
+  1. All the methods of interface are by default abstract(so we don't have to declare the methods as abstract).
+  2. Interfaces do not have instance variables inside it. Only exception is "public final static"
+     (with initialization of the variable). 
+  3. Java do not support multiple inheritance ie. a class cannot be extented from more than one class    
+     (however it can implement more than one interface).
+  4. Interfaces are implemented using "implements" keyword.
+  5. One interface can extend other interface.
+  6. Marker Interface- It is an interface without any method declared inside it.
+     eg. Cloneable, Searializable.
+  7. Functional Interface- It is an interface with single method declared inside it.
+     eg. Consumer
+ 
+ 
+# instanceof operator- It is used to check dynamic type of reference.
+ 
+# String pool is a special kind of memory for Strings. 
+ 
+# String are an example of immutable class.
+ 
+# StringBuffer - Methods are synchornised.
+                 Execution is slower compared to StringBuilder. 
+                 This is thread safe class.
+                 Reserves memory for 16 characters.
+ 
+  StringBuilder- Methods are not synchornised.
+                 Execution is faster compared to StringBuffer. 
+                 This is not a thread safe class.
+ 
+# Wrapper Classes are immutable classes. Integer, Character, Float, Double, etc are wrapper classes.
+ 
+# Native- Method declared as native in java has its implementation in some other language like C/C++.
+ 
+# Contract between equals and hashcode
+  1. If two objects are same asccording to the equals method then, calling hashcode on each object 
+     must produce same integer result.
+  2. It is not required that if two objects are different according to the "equals method" then calling 
+     hashcode on each object must produce distinct integer.
+ 
+ 
+# Collections and Generics
+ 
+# Difference between Collections and Collection- 
+  1. Collection is an interface and Collections is a class.
+ 
+ 
+ 
+ 
+# Collection- => 1. List(I) => 1.1 Vector list
+                            => 1.2 Array list
+                            => 1.3 Linked list
+ 
+              => 2. Queue(I) => 2.1 Linked list
+                             => 2.2 Priority Queue
+ 
+              => 3. Set(I)  => 3.1 Hashset
+                            => 3.2 Linked Hashset
+                            => 3.3 Tree Set 
+ 
+              => 4. Map => 4.1 Hash map
+                        => 4.2 Linked hashmap
+                        => 4.3 Tree map
+                        => 4.4 Hash Table
+ 
+# Vector- It is a dynamically growing array.
+ 
+# iterator(when i is small) - is a method of vector class.
+ 
+# Iterator(when I is capital) Class- It has two methods -next method and hasNext method.
+ 
+# difference between vector list and array list- 
+  vector- 1. Present in jdk 1.0.
+          2. It grows by 100% when it is full.
+          3. Methods are synchronised.
+          4. Slower as compared to ArrayList. 
+ 
+ 
+  ArrayList- 1. Introduced in jdk 1.1.
+             2. Grows by 50% when it is full.
+             3. Methods are non-synchronised for ArrayList.
+             4. Faster in execution compard to vector.
+ 
+ 
+ 
+# difference between LinkedList and ArrayList-
+  ArrayList- 1. Internally uses dynamic array for storage.
+             2. Insert/delete operations are not efficient in ArrayList compared to LinkedList.  
+             3. Implements list interface.
+ 
+  LinkedList- 1. Internally uses doubly linked list for storage.
+              2. Insert/deleteoperations are faster compared to ArrayList.
+              3. Implements list and queue interface.
+ 
+ 
+# Set- It is a collection of unique elements. 
+  1.1 HashSet- Collection of unique elements and order of insertion of elements is not preserved.
+  1.2 Linked HashSet- Collection of unique elements and order of insertion of elements and order of insertion is preserved.
+  1.3 TreeSet- It is a collection of unique and sorted elements.
+ 
+# HashTable and HashMap - methods of hashtable are synchronised and is slower in execution whereas methods of hashmap
+  are not synchronized and is faster in execution.
+ 
+# Difference between Comparator and Comparable - 
+  Comparable- 1. It provides the default criteria for sorting.
+              2. Advisable to use when we have access to source code of a class.
+              3. Need to override "compareTo" method.
+              4. Present inside package java.lang. 
+ 
+  Comparator- 1. We can customize sorting criteria using comparator.  
+              2. Advisable to use when we don't have access to source code of a class whose objects being compared.
+              3. Need to override "compare" method.
+              4. Present inside package java.util.
+ 
+ 
+# Throwable(c)- => Error
+                => Exception  =>RuntimeException
+                              =>IOException
+                              =>
+ 
+ 
+# Types of Exception
+  1. Checked(extending Exception class directly)
+     1.1      
+     eg. IOException, InterruptedException,etc
+  2. Unchecked(extending RuntimeExcpetion class directly)
+     2.1 
+     eg. NullPointerException, ArrayOutOfBoundException, ArithmeticException,etc 
+ 
+ 
+# MultiProcessing , MultiTasking and MultiThreading
+ 
+# MultiThreading can be implmented by-
+  => Extending Thread Class.(Thread Class itself implements Runnable interface)
+  => Implementing Runnable Interface.
+ 
+# Thread Interference-
+ 
+# Statement- 1. Statements
+             2. PreparedStatement
+             3. CollabelStatement
+ 
+# JDBC connection-
+  1. Download JDBC connector and then add that jar file in your project.
+  2. Load Driver class which is in "com.mysql.jdbc".To load, write "Class.forName("com.mysql.jdbc.Driver");"
+     inside the main method.
+  3. To set connection write, "Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/
+     test","root","Temp1234");".
+     Here, test is the database name, root is the user name and Temp1234 is the password.
+  4. Write/create java statements.
+  5. Execute query.
+  6. Process ResultSet.
+  7. Set the pointer by writing "rs.next();". (rs is the result set reference)
+  8. Now, close the connection. 
+ 
+ 
+                                               Java Enterprise Edition
+ 
+#Types of applications we can built using J2EE-
+1. Web Applications- There is one server and multiple clients. Web applications contains dynamic and static web pages.
+   here we will implement servlets and JSP.(Web server is used in this case)
+2. Enterprise Applications- Here both server and clients are intelligent.(application server is used in this case) 
+ 
+# web.xml is also called deployment descriptor.
+ 
+# Five different types of HTTP request-
+  1. GET (default request)- 
+  2. POST
+  3. PUT
+  4. DELETE 
+  5. OPTIONS
+ 
+# GET request drawback- parameters are displayed in the url. "doGet" method is used or we can even use "service" method.
+# POST request overcomes drwback of GET request. "doPost" method is used or we can even use "service" method.
+ 
+# To call one servlet from another servlet, it can be done using-
+          1. RequestDispatcher method- passing parameters is done through setAttribute/getAttribute of request object.
+          2. SendRedirect method- a. using URL rewriting 
+                                  b. using session object
+                                  c. using cookies
+ 
+# JSP tages-
+  1. <% %>- scriptlet tag
+  2. <%! %>- declaration tag
+  3. <%@ %>- directive tag
+  4. <%+ %>- expression tag
+ 
+ 
+ 
+ 
+                                                             MAVEN
+ 
+ 
+ 
+# It is neccessary to have internet for maven.
+ 
+# Maven download and configure and build all the neccessay Application.
+ 
+# Maven is build and deploy framework(Project Management Framework).
+ 
+# Maven is a software project management and comprehension tool.
+ 
+# Based on Project Object Model(POM)
+ 
+# Manage project's build, reporting and documentation from a central piece of information.
+ 
+# Maven belongs to Apache Software Foundation.
+ 
+# Maven updates automatically and deploy automatically the application.
+ 
+# Libraries are also known as documentation.
+ 
+# Ant was also a software and it is complex, and have various loop holes which are covered by Maven.
+ 
+# Several Areas of Concern taht maven deals:
+  1. Making the build process easy.
+  2. Providing a uniform build system.
+  3. Providing quality project information(All the info like name of project, version, etc).
+  4. Providing guidelines for best practices development(source code management structure and build structure-
+     standard structure is given by maven and tells where to keep which file)- It is universally accepted.
+  5. Allowing transparent migration to new features(migrate from maven to gradle).
+ 
+ 
+# Maven Objectives-
+  1. Maven uses standard directory layout and a default build lifecycle(creation to deployment).
+  2. In multiple development teams envirnment, Maven can set-up the way to wrok as per standards in a very  short time.
+  3. Maven Project structure and contents are declared in an xml file, pom.xml, which is fundamental unit of the 
+     entire Maven System
+ 
+# Maven Features-
+  1. Simple project setup that follow best practices.
+  2. Consitent usage across all projects.
+  3. Dependency management including automatic updating(we need not manually delete the old versions maven do this for us).
+  4. Large and growing repository of libraries.
+  5. Extensible, easilt write plugins in java.
+  6. Instant acccess to new features.
+ 
+# http://m...content-available-to-author-only...e.org 
+ 
+# Maven Build Processes
+  1. Lifecylcle-
+     1.1. Maven is based around the central concept of build lifecycle.
+     1.2. Eg. default, clean,site.
+ 
+  2. Phase-
+     2.1. Each lifecycle is made up of phases.
+     2.2. Eg. default lifecycle phases are compile, test, package, install.
+ 
+  3. Plugin-
+     3.1. An artifact that provides one or more goals.
+     3.2. Based on packaging type(jar, war, etc) plugins' goals are bound to phases by default.
+ 
+  4. Goals-
+     4.1 The task or action that is executed. A plugin can have one or more goals.
+ 
+# Build Life Cycle of Maven- It is a well-defined sequence of phases, which define the order in which 
+  the goals are to be executed.
+ 
+# Maven has 3 built in life cycle-
+  1. default(or build)- primary ligfecycle of mavenand is used to build the application.
+  2. clean- deletes the output of a build by deleting the build directory. 
+  3. site- creates a fresh documentation to create reports , deploy site, etc.
+ 
+ 
+# Phases in default life cycle-
+  1. validate - validate the project
+  2. compile 
+  3. test- uses testing unit like JUnit, these class will not be deployed
+  4. package - package the compiled code in its distributable format, like jar, war, etc
+  5. verify - run any checks to verify the package is valid and meets quality
+  6. install - install the project into local repository 
+  7. deploy - copies the final package to remote repository
+ 
+# Phases in clean life cycle- 
+  1. pre-clean 
+  2. clean 
+  3. post-clean  
+ 
+Cleaning does not convert old to new. 
+ 
+# No action does any other action.
+ 
+# Phases in site life cycle- 
+  1. pre-site - execute processes needed prior to the actual project site generation
+  2. site - generates project's site documentation
+  3. post-site - 
+  4. site-deploy - deploy generated site documentation.
+ 
+# Difference between package and compile-
+  package -build the project, create new jar file. 
+  compile- it will not create new jar file, it uses the old jar.
+ 
+                                                       WEB SERVICES
+ 
+# Web-Service - Websites are not Web services. Eg. Payment Gateway is a Web Service. Like button of facebook is also an
+  example web services.
+ 
+# Web Services- 
+  1. A collection of open protocols and standars used for exchanging information between two applications or 
+     systems.
+  2. Client Server application or application component for comunication.
+  3. Method of communication between two devices over the network.
+  4. A software system for interoperable machine to machine communication.
+ 
+# Web Service- Language independent way of communication.
+ 
+# Web Application- 
+  1. Software application runs in a web browser
+ 
+ 
+  Web Service-
+  1. API which runs on server.
+ 
+ 
+# Components of Web Services-
+  1. SOAP
+  2. WSDL
+  3. UDDI
+ 
+# SOAP(Simple Access Protocol)
+  -> XML based protocol for accessing web services.
+  -> W3C recommendation for commincation between applications.
+  -> Platform and language independent.
+  -> Can be used with Java, .NET or PHP ,etc language on any platform.
+ 
+# WSDL(Web Services Description Language)
+  -> XML documents contain information about web services such as, method name, method parameters and how to access it.
+ 
+ 
+# UDDI(Universal, Description, Discovery and Integration)
+  -> A directory of web service interface described by WSDL, containing information about web services.
+ 
+# Types of web services-
+  1. SOAP web services
+  2. RESTful web services
+ 
+ 
+# SOAP web services- 
+  Advantages:
+  1. WS security
+  2. Language and platform independent
+ 
+ 
+  Disadvantages:
+  1. Slow
+  2. WSDL dependent
+ 
+# RESTful Web Services (REpresentational State Tranfer)
+  -> An architectural style not a protocol.
+  -> Advantage:
+     1. Fast -consumes less resources and bandwidth.
+     2. Language and Platform Independent- written in any programming language and executed on any platform.
+     3. SOAP- can use SOAP web services as implementation.
+     4. Different data format- Plain text, XML, HTML, and JSON.
+     5. Protocol Independent.
+ 
+# URI (Uniform Resource Identification)- name and address of resource. 
+  -> if information does'nt have URI, its not a resource.
+  -> each resource should have atleast one URI.
+  -> should be descriptive.
+  -> should have structure.
+  -> should vary in a predictable way.
+ 
+# Jersey and RestEasy Framework.
+ 
+# Jersey Server Code File Download-
+  1. @Produces("text/plain")- for downloading test file
+  2. @Produces("image/png")- for downloading png image file 
+  3. @Produces("application/pdf")- for downloading PDF file
+  4. @Produces("applicatio/vnd.ms-excel")- for downloading excel file
+  5. @Produces("application/msword")- for downloading ms word file
+ 
+ 
+                                                              Spring	
+ 
+# POJO Class- It does not extend any API or interface. Independent testability.
+ 
+# Spring - 
+  1. Light weight- Spring is POJO centric, independent testability, less number of jars are there.
+  2. Dependency Injection- For eg. For a mobile phone to have services like phone calls, text messages, etc, for these 
+     services we use sim card. So here, sim provides Dependency injection.
+     It is technique in which dependency object is injected into dependent object.
+  3. Aspect Oriented- Business logic need not worry about peripheral logic. Aspect will worry about the secondary logic.  
+     One aspect should focus on one logic/task.   
+  4. Container- Create object of business model and manages its life cycle.
+  5. Framework- Need not write any code to create object.
+     Provide validations. Manages RMI logic. Supports declarative transactions. Unit and integration testing.  
+ 
+ 
+# Why we create objects- The main objective is to call the business logic method.
+  Spring provide with ready-made objects so that we need not worry about object creation and can focus on business logic
+  only. 
+ 
+ 
+# Benefits of Spring-
+  1. IoC Container- Inversion of Control
+  2. POJO Based JEE Framework
+  3. Promotes loose coupling  
+ 
+ 
+# IoC- toString, compare, compareTo, etc are the examples of IoC.
+ 
+# Bean Inheritance- When one bean definition inherits another bean definition it is called bean inheritance.
+  It is found in xml file.
+ 
+ 
+ 
+							Gradle
+ 
+# An open-source build automation tool.
+ 
+# Uses groovy or kotlin DSL(Domain-Specific Language) instead of XML for project configurations.
+ 
+# Gradle build scripts are written using Groovy or Kortlin DSL.
+ 
+# Builds up on ANT and Maven Repositories.
+ 
+# Advantages-
+  1. Highly customizable- Modeled in a way that is customizable and extensible in the most fundamental ways.
+  2. Fast- Completes the task quickly by reusing outputs from previous executions, processing only inputs
+     that changed and executing tasks in parallel.
+  3. Powerful- Official build tool for Andriod, and comes with support for many popular languages and technologies.
+  4. Gradle Wrapper- Execute Gradle builds on machines where gradle is not installed.
+  5. Open Source and free- license under Apache Software License(ASL).
+ 
+# Why Groovy?-
+  -> Gradle primary focus is to build java projects.
+  -> In team, build should be as transparent as possible to all team members.
+ 
+# build.gradle- normally contains build script.
+                located in the root directory of the project.
+                when the gradle command is executed it looks in the directory which command is executed .
+ 
+# plugins-
+ 1. Plugins is a set of tasks such as compiling tasks, setting domain objects, setting up source files.
+ 2. Extend the basic gradle model (eg. add new DSL elements that can be configured)
+ 3. Configure the projects according to the conversions (eg. add new tasks or configure sensible defaults)
+ 4. Apply specific configurations(eg. add organizational repositories or enforce standards)
+ 5. Each plugin is identified by plugin id.
+ 6. Core plugins are using short names to apply it.
+ 7. Community plugins are using fuly qualified name of plugin id.
+ 8. Sometimes it allows to specify class of plugin.
+ 9. Add java compilation, testing and bundling capabilities to a projects.
+ 10. It serves as the basis for many other gradle plugins.
+ 
+ 
+# Repositories- Gradle does not define any repositories.
+ 
+# Dependencies- 
+  1. Use to declare external dependencies downloaded from the web.
+  2. Standard configurations
+  3. Compile
+  4. Runtime
+  5. Test Compile
+  6. Test runtime
+ 
+# Group, name and version is compulsory to configure dependencies.
+ 
+# Create Java Application using Gradle-
+  1. Create empty directory- (gradle-jave-app)
+  2. Change to directory- (gradle jave-app)
+  3. Run command- (gradle init)
+  4. Select type of project - (gradle-jave-app)
+  5. Select implementation language- (java)
+  6. Select build script DSL- (groovy)
+  7. Select test framework- (junit 4)
+  8. Project name- (gradle-jave-app)
+  9. Source package- (gradle-jave-app)
+ 
+ 
+ 
+# Stereotype annotations are by default inactive.
+ 
+ 
+							Spring Boot
+ 
+# In Spring boot, tomcat is integrated.
+ 
+# Dependencies are added in pom.xml.
+ 
+ 

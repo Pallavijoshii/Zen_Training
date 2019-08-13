@@ -1,0 +1,12 @@
+package com.zensar.xml.sax.parsers;
+
+import org.xml.sax.helpers.DefaultHandler;
+
+public class MoviesXmlHandler extends DefaultHandler {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

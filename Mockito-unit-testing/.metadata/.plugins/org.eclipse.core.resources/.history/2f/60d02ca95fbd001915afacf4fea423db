@@ -1,0 +1,17 @@
+package com.zensar.mockito;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.List;
+
+import org.mockito.Mockito;
+
+public class ListSpyTest {
+	
+	public void testList() {
+		List<String> Flowers = Mockito.mock(List.class);
+		Mockito.when(Flowers.get(0)).thenReturn("rose");
+		assertEquals("rose", Flowers.get(0));
+	}
+
+}

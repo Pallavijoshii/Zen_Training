@@ -1,0 +1,23 @@
+package mypac;
+
+import java.util.Scanner;
+
+public class Average {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		int hindi,english,maths,physics,chemistry;
+		System.out.println("enter marks of hindi ");
+		hindi=sc.nextInt();
+		System.out.println("enter marks of english");
+		english=sc.nextInt();
+		System.out.println("enter marks of maths ");
+		maths=sc.nextInt();
+		System.out.println("enter marks of physics");
+		physics=sc.nextInt();
+		System.out.println("enter marks of chemistry");
+		chemistry=sc.nextInt();
+		System.out.println("Average =" +(hindi+english+maths+physics+chemistry)/5 );
+	}
+
+}

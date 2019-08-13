@@ -1,0 +1,26 @@
+package com.zensar;
+
+import java.util.Scanner;
+
+public class Icecream {
+	private String flavour;
+	public float price;
+	private float discount;
+	
+	private Icecream(String flavour,float price)
+	{
+		super();
+		this.flavour=flavour;
+		this.price=price;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		flavour=sc.next();
+        price=sc.nextFloat();
+       
+		
+
+	}
+
+}

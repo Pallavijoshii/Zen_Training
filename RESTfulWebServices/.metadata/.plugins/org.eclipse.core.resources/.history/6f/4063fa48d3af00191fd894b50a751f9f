@@ -1,0 +1,14 @@
+package com.zensar.services.business;
+
+/*
+* Author: SHIVAM SHUKLA
+* Creation Date: 26th July 2019 11.22AM
+* Modified Date: 26th July 2019 11.22AM
+* Version: 1.0
+* Copyright: Zensar Technologies. Alll rights reserved. 
+* Description: Data Access Object Interface.
+* It focuses on Business Logic. 
+* */
+public interface ProductService {
+				
+}

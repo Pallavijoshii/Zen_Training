@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Shop-App" project="Shop-App" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.zensar.mockito.AppTest" time="0.195">
+    <testcase name="testApp" classname="com.zensar.mockito.AppTest" time="0.195"/>
+  </testsuite>
+  <testsuite name="com.zensar.mockito.CalculatorTest" time="0.239">
+    <testcase name="additionTest" classname="com.zensar.mockito.CalculatorTest" time="0.239"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,18 @@
+package com.zensar;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class EmployeeDAO {
+	
+	public Connection createConnection()
+	{
+		try
+		{
+		Class.forName("com.mysql.jdbc.Driver"); 
+		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/test_mysql","root","Temp1234");
+		return null;
+	}
+	}
+
+}

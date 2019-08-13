@@ -1,0 +1,183 @@
+@font-face{
+    src:url('../fonts/AbhayaLibre-bold.tff');
+    font-family:extFont;
+}
+
+
+
+body{
+    margin-left: 100px;
+}
+nav{
+    clear: both;
+    width: 95%;
+    border: bottom 4px double antiquewhite;
+    background: antiquewhite;
+    color: white;
+    margin-top: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 1px navy;
+    
+}
+
+nav ul li 
+{
+    color: aqua;
+    font-size: 1.5em;
+     list-style: none;
+    margin-right: 10px;
+    
+    
+}
+
+#emplist
+{
+    height: 250px;
+    width: 30%;
+    float: left;
+}
+
+
+aside{
+    height: 600px;
+    border: 2px solid red;
+    width: 30%;
+float: left;
+}
+
+#canvascontent{
+    height: 600px;
+    border: 2px solid red;
+    width: 90%;
+    float: left;
+}
+
+#subcontent{
+    padding: 10px;
+    height: 600px;
+    border: 2px solid red;
+    width: 50%;
+    float: left;
+    column-count: 2;
+    column-gap: 10px;
+}
+#headering{
+    float: left;
+    width: 80%;
+    height: 200px;
+   }
+
+
+
+@media screen and (max-width:600px){
+    #headering{
+        display:none;
+    }
+}
+
+#headertext{
+    text-shadow: 0px 0px 0px black;
+    text-align: center;
+    font-family: extFont;
+    color: navy;
+    font-size: 3em;
+    text-shadow: 5px 5px 5px red;
+
+}
+
+footer{
+    clear: both;
+    width: 80%;
+    height: 50px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: right;
+    border-top: 4px double navy;
+}
+
+
+nav ul li{
+    color: red;
+}
+
+
+#emptable tr:nth-child(2n)
+{
+    background-color: aquamarine;
+    color: firebrick;
+    
+}
+
+#emptable tr:nth-child(2n+1)
+{
+    background-color: gray;
+    color: firebrick;
+    
+}
+#emptable tr:nth-child(1)
+{
+    background-color: yellow;
+    color: brown;
+    
+}
+#emptable{
+    border-radius: 7px;
+}
+
+
+
+#emptable tr th:last-child{
+    border-top-right-radius: 6px; 
+}
+
+#emptable tr:hover{
+    background-color: antiquewhite;
+    color: red;
+}
+
+#emptable tr:nth-child(3) td:first-child:hover{
+    transform: scale(0.5);
+    background-color: aquamarine;
+}
+
+nav ul li:hover{
+  transform: rotate(-30deg);
+
+}
+
+#subcontent,aside{
+    /*background: linear-gradient(#3re235,#5redg5);*/
+  /* background: linear-gradient(to right,#3f87a3,#2d32a2);*/
+    /*background: linear-gradient(217deg,rgba(0,0,0,8),rgba(27,56,65,23));*/
+}
+
+@media screen and (max-width:600px){
+    #headering{
+        display:none;
+    }
+}
+
+#headertext{
+    text-shadow: 0px 0px 0px black;
+    text-align: center;
+    font-family: extFont;
+    color: navy;
+    font-size: 3em;
+    text-shadow: 5px 5px 5px red;
+
+}
+#maincontent{
+    display: flex;
+}
+#template{
+     text-shadow: 0px 0px 0px black;
+    text-align: center;
+    font-family: extFont;
+    color: navy;
+    font-size: 3em;
+    text-shadow: 5px 5px 5px red;
+
+    
+}
+
+

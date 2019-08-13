@@ -1,0 +1,35 @@
+div
+{
+    background: aliceblue;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #ccc;
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.i2{
+    height: 200px;
+}
+
+.item{
+    background-color: #f65439;
+    padding: 40px;
+    margin: 30px;
+    color: #fff;
+    font-size: 40px;
+}
+.i3{
+    order: 1;
+    flex: 1;
+}
